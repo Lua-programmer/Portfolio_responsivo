@@ -9,5 +9,5 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run() 
+    app.run(debug=True) 
     #Vai rodar o arquivo se ele tiver no arquivo principal, ou seja, na main. O debug ativa o modo desenvolvedor e vai fazer com que minha página atualize automaticamente.
