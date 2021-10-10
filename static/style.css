@@ -91,7 +91,7 @@ body {
 }
 
 section#inicio {
-  background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p1/3334891-desktop-source-code-and-wallpaper-by-coding-and-programming-gr%C3%A1tis-foto.jpg");
+  background-image: url("./img/tema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -177,3 +177,8 @@ i.menu-mobile{
 *::-webkit-scrollbar-thumb{
   background-color: #0c0113;
 }
+
+.section-bg{
+  background-color: #F7ECFE;
+}
+

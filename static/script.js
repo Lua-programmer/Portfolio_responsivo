@@ -14,3 +14,18 @@ menuMobile.addEventListener("click", () => {
     ? menuMobile.classList.replace("bi-list", "bi-x") : menuMobile.classList.replace("bi-x", "bi-list");
     body.classList.toggle("menu-nav-active");
 });
+
+/*
+Fecha o menu quando algum item é clicado
+*/
+
+const navItem = document.querySelectorAll(".nav-item");
+
+navItem.forEach(item => {
+    item.addEventListener("click", () => {
+        if(body.classList.contains("manu-nav-active")) {
+            body.classList.remove("manu-nav-active");
+            menuMobile.classList.replace("bi-x", "bi-list");
+        }
+    })
+})
