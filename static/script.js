@@ -19,13 +19,13 @@ menuMobile.addEventListener("click", () => {
 Fecha o menu quando algum item é clicado
 */
 
-const navItem = document.querySelectorAll(".nav-item");
+const navItem = document.querySelectorAll('.nav-item');
 
 navItem.forEach(item => {
     item.addEventListener("click", () => {
-        if(body.classList.contains("manu-nav-active")) {
-            body.classList.remove("manu-nav-active");
-            menuMobile.classList.replace("bi-x", "bi-list");
-        }
-    })
-})
+        body.classList.contains("menu=nav-active")
+        ? body.classList.remove("manu-nav-active") : body.classList.replace("bi-x" , "bi-list");
+        body.classList.toggle("menu-nav-active");
+    });
+});
+

@@ -124,7 +124,7 @@ section#inicio div#arraste a{
 i.menu-mobile{
   position: fixed;
   color: #fff;
-  background-color: transparent;
+  background-color: #0c0113;
   right:1rem;
   top:1rem;
   font-size: 1.5rem;
