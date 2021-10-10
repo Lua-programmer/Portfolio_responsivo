@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html,
 body {
@@ -182,3 +183,45 @@ i.menu-mobile{
   background-color: #F7ECFE;
 }
 
+.cv .cv-title{
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:#180722; 
+}
+
+.cv .cv-item{
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #9452a5;
+  position: relative;
+}
+
+.cv .cv-item h4{
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #180722;
+  margin-bottom: 10px;
+}
+
+.cv .cv-item h5{
+  background: #efe4f7;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cv .cv-item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -9px;
+  width:16px;
+  height:16px;
+  border: solid 2px #9452a5;
+  background-color: #fff;
+  border-radius: 50%;
+}
