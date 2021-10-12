@@ -24,7 +24,7 @@ body {
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 130px;
+  width: 150px;
   height: 130px;
   border: 6px solid #D79EFA;
   border-radius: 50%;
@@ -224,4 +224,16 @@ i.menu-mobile{
   border: solid 2px #9452a5;
   background-color: #fff;
   border-radius: 50%;
+}
+
+.carousel-control-prev{
+  margin-left: -0.7rem;
+}
+
+.carousel-control-next{
+  margin-right: -0.7rem;
+}
+
+.carousel-indicators button{
+  margin-bottom: -8rem;
 }
