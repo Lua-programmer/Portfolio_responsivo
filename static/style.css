@@ -277,3 +277,39 @@ i.menu-mobile{
   transform: translate3d(0, 0, 0);
 }
 
+#btn-enviando{
+  display:none;
+}
+
+#alerta {
+  position: fixed;
+  z-index: 10 ;
+  top:30px;
+  right:30px;
+}
+
+#footer {
+  padding: 15px;
+  color: #fff;
+  font-size: 12px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background-color: #0c0113;
+  transition: .3s;
+} 
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 1012px) {
+  #footer{
+    position: static;
+    width: auto;
+    padding: 20px 15px;
+  }
+}

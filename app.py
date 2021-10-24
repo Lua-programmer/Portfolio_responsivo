@@ -7,9 +7,10 @@ app = Flask(__name__)
 app.secret_key = 'luaprogrammer'
 
 mail_settings = {
-    "MAIL_SERVER": 'smtp.gmail.com' ,
+    "MAIL_SERVER": 'smtp.gmail.com',
     "MAIL_PORT": 465,
-    "MAIL_USE_TLS": True,
+    "MAIL_USE_TLS": False,
+    "MAIL_USE_SSL": True,
     "MAIL_USERNAME": email,
     "MAIL_PASSWORD": senha
 }
@@ -20,8 +21,8 @@ mail = Mail(app)
 
 class Contato:
     def __init__(self, nome, email, mensagem):
-        self.nome = nome,
-        self.email = email,
+        self.nome = nome
+        self.email = email
         self.mensagem = mensagem
 
 #Rota HOME, com uma função que não recebe parametro e renderiza o index.html no retorno dela.
@@ -40,8 +41,8 @@ def send():
 
         msg = Message(
             subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
-            sender= app.config.ger("MAIL_USERNAME"),
-            recipients= [ 'luanamelissaprogrammer@gmail.com', app.config.ger("MAIL_USERNAME")],
+            sender= app.config.get("MAIL_USERNAME"),
+            recipients= [ 'luanamelissaprogrammer@gmail.com', app.config.get("MAIL_USERNAME")],
             body= f'''
             
             {formContato.nome} com o e-mail {formContato.email}, tem enviou a seguinte mensagem :
