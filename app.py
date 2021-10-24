@@ -29,11 +29,11 @@ class Contato:
         self.mensagem = mensagem
 
 #Rota HOME, com uma função que não recebe parametro e renderiza o index.html no retorno dela.
-@app.route('/')
+@app.route("/")
 def index():
     return render_template('index.html')
 
-@app.route('/send', methods=['GET', 'POST'])
+@app.route("/send", methods=['GET', 'POST'])
 def send():
     if request.method == 'POST':
         formContato = Contato(
